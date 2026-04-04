@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>माझा पोर्टफोलिओ</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+       nav {
+    background: #020617;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;   
+}
+.about-left {
+    position: relative;
+    z-index: 1;
+}
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+       header {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8z8uRIqKORiT228EDIBfoSw4L7mlZdd-pBA&s') no-repeat center center/cover;
+    color: white;
+    position: relative;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+header h1, header p {
+    position: relative;
+    z-index: 1;
+}
+
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #38bdf8;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e293b;
+        }
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    background: linear-gradient(to right, #020617, #0f172a);
+    flex-wrap: wrap;
+}
+
+/* LEFT SIDE */
+.about-left {
+    position: relative;
+    width: 50%;
+    min-height: 400px;
+}
+
+/* Circle base */
+.circle {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: #020617;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Green badges */
+.badge {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: #22c55e;
+    color: white;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+
+/* POSITIONING (this is key 🔥) */
+.circle1 { top: 0; left: 40px; }
+.circle2 { top: 40px; left: 220px; }
+.circle3 { top: 180px; left: 20px; }
+.circle4 { top: 220px; left: 220px; }
+
+/* RIGHT SIDE */
+/* Heading */
+.about-right h2 {
+    color: #38bdf8;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Big text */
+.about-text {
+    font-size: 22px;
+    color: #38bdf8;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+/* Small text */
+.about-small {
+    font-size: 16px;
+    color: #cbd5f5;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* Button */
+.about-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #38bdf8;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.about-btn:hover {
+    background: #0ea5e9;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 150px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Text */
+.about-text {
+    font-size: 22px;
+    color: #22c55e;
+    font-weight: bold;
+    line-height: 1.6;
+}
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    background: linear-gradient(to right, #020617, #0f172a);
+    flex-wrap: nowrap;
+    gap: 40px;
+}
+
+.about-left {
+    position: relative;
+    width: 50%;
+    min-height: 400px;
+}
+
+.about-right {
+    width: 45%;
+    color: white;
+}
+.edu-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: #020617;
+}
+
+.edu-section h2 {
+    color: #38bdf8;
+    margin-bottom: 40px;
+}
+
+.edu-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Card */
+.edu-card {
+    text-decoration: none;
+    background: #020617;
+    padding: 30px 20px;
+    border-radius: 12px;
+    width: 180px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Hover */
+.edu-card:hover {
+    transform: translateY(-10px);
+    background: #0f172a;
+}
+
+/* Circle Icon */
+.edu-icon {
+    width: 70px;
+    height: 70px;
+    background: #38bdf8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Text */
+.edu-card p {
+    color: white;
+    font-weight: bold;
+}
+.edu-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #020617;
+}
+
+/* Main title */
+.edu-section h2 {
+    color: #38bdf8;
+    margin-bottom: 5px;   /* 🔥 less gap */
+}
+
+/* Subtitle */
+.edu-subtitle {
+    color: #38bdf8;
+    margin-bottom: 40px;
+    font-size: 36px;   /* 🔥 MUCH BIGGER */
+    font-weight: 900;
+}
+
+/* ROW (forces same line 🔥) */
+.edu-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+
+    flex-direction: row;   /* 🔥 FORCE HORIZONTAL */
+    flex-wrap: nowrap;     /* 🔥 PREVENT GOING DOWN */
+}
+
+/* Each item */
+.edu-item {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Circle */
+.edu-circle {
+    width: 80px;
+    height: 80px;
+    background: #38bdf8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 30px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.edu-item:hover .edu-circle {
+    transform: scale(1.1);
+    background: #0ea5e9;
+}
+
+/* Text */
+.edu-item p {
+    font-weight: bold;
+}
+.reflection-subtitle {
+    color: #38bdf8;      
+    font-size: 36px;     /* 🔥 bigger */
+    font-weight: bold;
+    text-align: left;   /* 👉 right aligned */
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-right: 40px; /* 👉 little spacing from edge */
+}
+.creative-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Image */
+.creative-img img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Right side */
+.creative-content {
+    flex: 1;
+}
+
+/* Name */
+.creative-name {
+    color: #38bdf8;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Text */
+.creative-text {
+    font-size: 14px;
+    font-weight: bold;   /* 🔥 THIS LINE ADDED */
+    margin: 10px 0 15px 0;
+    line-height: 1.5;
+}
+
+/* Buttons container */
+.creative-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Buttons */
+.creative-buttons a {
+    text-decoration: none;
+    padding: 8px 16px;
+    background: #38bdf8;
+    color: white;
+    border-radius: 20px;   /* 🔥 oval shape */
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Hover */
+.creative-buttons a:hover {
+    background: #0ea5e9;
+}
+.creative-box {
+    margin-bottom: 30px;
+}
+/* Hidden state */
+.animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+/* Visible state */
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.skills-section {
+    padding: 80px 20px;
+    background: #0f172a;
+    text-align: center;
+}
+
+.skills-section h2 {
+    color: #38bdf8;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Each skill */
+.skill {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+/* Skill text */
+.skill p {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Bar background */
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background: #1e293b;
+    border-radius: 10px;
+}
+
+/* Fill (blue) */
+.skill-fill {
+    height: 100%;
+    background: #38bdf8;
+    border-radius: 10px;
+}
+.skills-section {
+    background: #020617;
+    padding: 80px 10%;
+    color: white;
+}
+
+.skills-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* LEFT */
+.skills-left h2 {
+    color: white;
+}
+
+.skills-left h3 {
+    color: #38bdf8;
+    font-size: 32px;
+}
+
+.skills-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: default; /* does nothing */
+}
+
+/* RIGHT BARS */
+.skill-bar-box {
+    margin-bottom: 20px;
+}
+
+.skill-bar-box p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar {
+    height: 6px;
+    background: #1e293b;
+}
+
+.fill {
+    height: 100%;
+    background: #38bdf8;
+    width: 0;
+    transition: 1s;
+}
+
+/* CIRCLES */
+.circle-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.skills-section .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 6px solid #1e293b;
+    position: relative;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-bottom: 20px; /* space for number */
+}
+
+.skills-section .circle span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.skills-section .circle p {
+    margin-top: 15px;   /* pushes below */
+    font-size: 14px;
+}
+
+.skills-section .circle span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+.circle-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.circle-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.circle-box {
+    text-align: center;
+}
+
+.circle-box p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.skills-circle-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: nowrap;
+    margin-top: 40px;
+}
+
+.skills-circle-container .circle-box {
+    width: 120px;
+    text-align: center;
+}
+.upakram-section {
+    padding: 80px 10%;
+    background: #020617;
+    text-align: center;
+}
+
+/* Titles */
+.section-title {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #22c55e;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+/* Grid layout */
+.upakram-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+/* Items */
+.upakram-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.upakram-item.large {
+    grid-row: span 2;
+}
+
+/* Images */
+.upakram-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    color: white;
+    text-align: left;
+}
+
+/* Text */
+.overlay h4 {
+    color: #22c55e;
+    margin-bottom: 5px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6);  /* 🔥 stronger background */
+    color: white;
+    z-index: 2;
+}
+.upakram-item img {
+    transition: 0.5s;
+}
+
+.upakram-item:hover img {
+    transform: scale(1.1);
+}
+.upakram-item {
+    position: relative;
+    height: 250px;   /* 🔥 IMPORTANT */
+}
+.upakram-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.overlay h4 {
+    color: #38bdf8;  /* blue instead of green */
+}
+.contact-section {
+    background: #020617;
+    padding: 60px 10%;
+    color: white;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+/* LEFT */
+.contact-left {
+    width: 25%;
+}
+
+.contact-logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.contact-left h4 {
+    margin-bottom: 15px;
+}
+
+/* Footer links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #38bdf8;
+}
+
+/* CENTER MAP */
+.contact-center {
+    width: 40%;
+}
+
+/* RIGHT BOX */
+.contact-right {
+    width: 25%;
+    background: #0f172a;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-right p {
+    margin: 10px 0;
+}
+
+/* COPYRIGHT */
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #94a3b8;
+}
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <ul>
+       <li><a href="#home">मुख्यपृष्ठ</a></li>
+        <li><a href="#about">माझ्याबद्दल</a></li>
+        <li><a href="#education">शैक्षणिक नोंदणी</a></li>
+        <li><a href="#reflection">चिंतन लेखन</a></li>
+        <li><a href="#skills">कौशल्ये</a></li>
+        <li><a href="#activities">उपक्रम</a></li>
+        <li><a href="#contact">संपर्क</a></li>
+    </ul>
+</nav>
+<!-- Google Fonts Import -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+
+<header id="home" style="position: relative; padding: 120px 20px; background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f') no-repeat center center/cover; background-size: cover;">
+    
+    <!-- Overlay -->
+    <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6);"></div>
+
+    <!-- Text -->
+    <div style="position:relative; z-index:1; text-align:center; color:white; font-family:'Montserrat', sans-serif;">
+        <h1 style="font-size: 80px; line-height:1.1; font-weight:900; margin:0;">
+            👋 नमस्कार, मी<br>
+            <span style="color:#38bdf8;">वैशाली</span> पाटील
+        </h1>
+
+        <!-- Dot + Student Teacher -->
+        <p style="font-size: 24px; font-weight:700; margin-top:20px; display:inline-block;">
+            <span style="color:#FFD700; font-size:28px; vertical-align:middle;">•</span> छात्र शिक्षक
+        </p>
+
+        <!-- College line -->
+        <p style="font-size:20px; font-weight:500; margin-top:8px;">
+            कांतीलाल खिंवसरा बी.एड. कॉलेज, पुणे
+        </p>
+
+        <!-- Buttons -->
+        <div style="margin-top:30px;">
+            <a href="#about" style="text-decoration:none; padding:12px 28px; margin:0 10px; background-color:#38bdf8; color:white; font-weight:700; border-radius:8px; transition:0.3s;">
+                परिचय
+            </a>
+            <a href="#contact" style="text-decoration:none; padding:12px 28px; margin:0 10px; background-color:#FFD700; color:black; font-weight:700; border-radius:8px; transition:0.3s;">
+                संपर्क
+            </a>
+        </div>
+    </div>
+</header>
+
+<section id="about" class="about-section">
+
+    <!-- Left Side (Circles Design) -->
+    <div class="about-left animate">
+
+        <div class="circle circle1">
+            <span class="badge">१०+</span>
+            <p>समाधानी विद्यार्थी</p>
+        </div>
+
+        <div class="circle circle2">
+            <span class="badge">९+</span>
+            <p>पूर्ण प्रकल्प</p>
+        </div>
+
+        <div class="circle circle3">
+            <span class="badge">२</span>
+            <p>सुरू असलेले प्रकल्प</p>
+        </div>
+
+        <div class="circle circle4">
+            <span class="badge">२००+</span>
+            <p>कार्य तास</p>
+        </div>
+
+    </div>
+
+    <!-- Right Side -->
+    <div class="about-right animate">
+    <h2>माझ्याबद्दल</h2>
+
+    <img src="photo.jpg" alt="profile" class="profile-img">
+
+    <!-- Main big text -->
+    <p class="about-text">
+        ज्ञानाच्या या प्रवासात प्रत्येक विद्यार्थी हा माझ्यासाठी एक उमलणारे फूल आहे,
+        आणि त्या फुलांना योग्य संस्कारांचे पाणी देणे हीच माझी जबाबदारी आहे.
+    </p>
+
+    <!-- NEW smaller lines -->
+    <p class="about-small">
+        मी एक विद्यार्थी शिक्षक असून २०२५–२६ या शैक्षणिक वर्षात बी.एड. अभ्यासक्रमात प्रवेश घेतला आहे.
+        मराठी विषयात एम.ए. पूर्ण करून मी ज्ञानाच्या प्रवाहात स्वतःला समर्पित केले आहे.
+    </p>
+
+    <!-- Button -->
+    <a href="YOUR_GOOGLE_DRIVE_LINK" target="_blank" class="about-btn">
+        माझी पात्रता
+    </a>
+</div>
+
+</section>
+<section id="education" class="edu-section">
+
+    <h2>📘 शैक्षणिक नोंदणी</h2>
+    <h3 class="edu-subtitle">अभिलेख आणि गुणपत्रिका</h3>
+
+    <div class="edu-row">
+
+        <!-- Item 1 -->
+        <a href="LINK1" target="_blank" class="edu-item animate">
+            <div class="edu-circle">
+                <span>📄</span>
+            </div>
+            <p>इयत्ता १० वी</p>
+        </a>
+
+        <!-- Item 2 -->
+        <a href="LINK2" target="_blank" class="edu-item animate">
+            <div class="edu-circle">
+                <span>🎓</span>
+            </div>
+            <p>इयत्ता १२ वी</p>
+        </a>
+
+        <!-- Item 3 -->
+        <a href="LINK3" target="_blank" class="edu-item animate">
+            <div class="edu-circle">
+                <span>📘</span>
+            </div>
+            <p>पदवी</p>
+        </a>
+
+        <!-- Item 4 -->
+        <a href="LINK4" target="_blank" class="edu-item animate">
+            <div class="edu-circle">
+                <span>🏫</span>
+            </div>
+            <p>बी.एड.</p>
+        </a>
+
+    </div>
+
+</section>
+
+<section id="reflection">
+    <h2>✍️ चिंतन लेखन</h2>
+    <h3 class="reflection-subtitle">माझी सर्जनशील कामे</h3>
+<div class="creative-box">
+
+    <!-- Left Image -->
+    <div class="creative-img">
+        <img src="image.jpg" alt="creative work">
+    </div>
+
+    <!-- Right Content -->
+    <div class="creative-content">
+
+        <!-- Name -->
+        <h4 class="creative-name">प्रा. नीता पुरी</h4>
+
+        <!-- Description -->
+        <p class="creative-text">
+            इतिहास म्हणजे मानवी संस्कृतीचा विकास आणि भूतकाळातील महत्त्वपूर्ण घटनांचा
+            कालक्रमानुसार केलेला शास्त्रशुद्ध अभ्यास होय.
+        </p>
+
+        <!-- Buttons -->
+        <div class="creative-buttons">
+            <a href="LINK1" target="_blank">PDF 1</a>
+            <a href="LINK2" target="_blank">PDF 2</a>
+            <a href="LINK3" target="_blank">Image</a>
+            <a href="LINK4" target="_blank">More</a>
+        </div>
+
+    </div>
+
+</div>
+<div class="creative-box animate">
+
+    <!-- Left Image -->
+    <div class="creative-img">
+        <img src="image2.jpg" alt="creative work">
+    </div>
+
+    <!-- Right Content -->
+    <div class="creative-content">
+
+        <!-- Name -->
+        <h4 class="creative-name">प्रा. शैलजा चतुर्वेदि</h4>
+
+        <!-- Description -->
+        <p class="creative-text">
+            बालकांच्या वाढीवर आणि विकासावर परिणाम करणाऱ्या विविध सामाजिक व सांस्कृतिक 
+            घटकांचे विश्लेषण करून त्यांच्या सर्वांगीण प्रगतीसाठी आवश्यक शैक्षणिक दृष्टिकोन 
+            विकसित करणे हा या विषयाचा मुख्य उद्देश आहे.
+        </p>
+
+        <!-- Single Button -->
+        <div class="creative-buttons">
+            <a href="YOUR_LINK" target="_blank">View</a>
+        </div>
+
+    </div>
+
+</div>
+<div class="creative-box animate">
+
+    <!-- Left Image -->
+    <div class="creative-img">
+        <img src="image3.jpg" alt="creative work">
+    </div>
+
+    <!-- Right Content -->
+    <div class="creative-content">
+
+        <!-- Name -->
+        <h4 class="creative-name">प्रा. सुरेखा राजवंत</h4>
+
+        <!-- Description -->
+        <p class="creative-text">
+            स्व'ची जाणीव (Understanding the Self) हा एक महत्त्वाचा विषय आहे. 
+            याचा मुख्य उद्देश भावी शिक्षकांना स्वतःच्या क्षमता, भावना आणि विचारांची 
+            ओळख करून देणे हा असतो.
+        </p>
+
+        <!-- 2 Buttons -->
+        <div class="creative-buttons">
+            <a href="LINK1" target="_blank">PDF</a>
+            <a href="LINK2" target="_blank">Image</a>
+        </div>
+
+    </div>
+
+</div>
+<div class="creative-box animate">
+
+    <!-- Left Image -->
+    <div class="creative-img">
+        <img src="image4.jpg" alt="creative work">
+    </div>
+
+    <!-- Right Content -->
+    <div class="creative-content">
+
+        <!-- Name -->
+        <h4 class="creative-name">प्रा. शुभांगी बालघरे</h4>
+
+        <!-- Description -->
+        <p class="creative-text">
+            मराठी हा महाराष्ट्र राज्याचा अधिकृत आणि अभिजात दर्जा प्राप्त भाषा विषय आहे, 
+            जो समृद्ध साहित्यिक वारसा (संत साहित्य, आधुनिक काव्य) आणि देवनागरी लिपी शिकवतो. 
+            हा विषय व्याकरण, संवाद कौशल्य आणि भाषिक संस्कृतीच्या माध्यमातून 
+            व्यक्तिमत्त्व विकासासाठी अत्यंत महत्त्वाचा आहे.
+        </p>
+
+        <!-- 2 Buttons -->
+        <div class="creative-buttons">
+            <a href="LINK1" target="_blank">PDF</a>
+            <a href="LINK2" target="_blank">Image</a>
+        </div>
+
+    </div>
+
+</div>
+<div class="creative-box animate">
+
+    <!-- Left Image -->
+    <div class="creative-img">
+        <img src="image5.jpg" alt="creative work">
+    </div>
+
+    <!-- Right Content -->
+    <div class="creative-content">
+
+        <!-- Name -->
+        <h4 class="creative-name">प्रा. ज्योती डावखर</h4>
+
+        <!-- Description -->
+        <p class="creative-text">
+            समकालीन भारतीय शिक्षणात लिंगभाव आणि समाज यांचा परस्परसंबंध अत्यंत महत्त्वाचा असून, 
+            तो शैक्षणिक धोरणांद्वारे समानता आणण्याचा प्रयत्न करतो. हे शिक्षण पारंपरिक रुढी, 
+            लिंगभेद आणि सामाजिक विषमता नष्ट करून मुला-मुलींना समान संधी, हक्क आणि 
+            सर्वांगीण विकास साधण्यासाठी सक्षम बनवण्यावर भर देते.
+        </p>
+
+        <!-- 2 Buttons -->
+        <div class="creative-buttons">
+            <a href="LINK1" target="_blank">PDF</a>
+            <a href="LINK2" target="_blank">Image</a>
+        </div>
+
+    </div>
+
+</div>
+<div class="creative-box animate">
+
+    <!-- Left Image -->
+    <div class="creative-img">
+        <img src="image6.jpg" alt="creative work">
+    </div>
+
+    <!-- Right Content -->
+    <div class="creative-content">
+
+        <!-- Name -->
+        <h4 class="creative-name">प्रा. मृणालिनी पाटील</h4>
+
+        <!-- Description -->
+        <p class="creative-text">
+            हा ज्ञान आणि आनंदाचा उत्तम स्रोत आहे, जो मानवी व्यक्तिमत्त्वाला प्रगल्भ करतो. 
+            वाचनामुळे शब्दसंग्रह, व्याकरण आणि विचारशक्ती सुधारते, तसेच मानसिक शांतता मिळते. 
+            वाचन हे प्रगट (मोठ्याने) किंवा मूक (शांत) अशा दोन्ही प्रकारे केले जाऊ शकते, 
+            ज्यामुळे नवीन कल्पना आणि अनुभव मिळतात.
+        </p>
+
+        <!-- 1 Button -->
+        <div class="creative-buttons">
+            <a href="LINK1" target="_blank">View</a>
+        </div>
+
+    </div>
+
+</div>
+    
+</section>
+<section id="skills" class="skills-section">
+
+    <div class="skills-wrapper">
+
+        <!-- LEFT SIDE -->
+        <div class="skills-left">
+    <h2>कौशल्ये</h2>
+
+    <h3 style="font-weight:bold; font-size:32px;">
+        माझी कौशल्ये व साधने
+    </h3>
+
+    <p style="font-weight:bold;">
+        प्रत्येक दिवस नवे शिकण्याचे आणि शिकवण्याचे आव्हान असतो
+    </p>
+
+    <p>
+        मी मराठी विषयाचे अध्यापन करताना विद्यार्थ्यांच्या सर्वांगीण विकासावर भर देते. 
+        भाषा समज, लेखन कौशल्य, वाचन संस्कार आणि विचारशक्ती विकसित करण्यासाठी 
+        विविध अध्यापन पद्धतींचा वापर करते. विद्यार्थ्यांना विषय समजण्यास सोपा जावा 
+        आणि त्यांच्या सर्जनशीलतेला चालना मिळावी यासाठी आधुनिक साधने व उपक्रमांचा उपयोग करते.
+    </p>
+
+    <a href="javascript:void(0)" class="skills-btn">अभिप्राय घ्या</a>
+</div>
+
+        <!-- RIGHT SIDE -->
+        <div class="skills-right">
+
+            <!-- Skill Bars -->
+            <div class="skill-bar-box">
+                <p>अध्यापन कौशल्य <span>95%</span></p>
+                <div class="bar"><div class="fill" data-width="95"></div></div>
+            </div>
+
+            <div class="skill-bar-box">
+                <p>संवाद व मार्गदर्शन <span>85%</span></p>
+                <div class="bar"><div class="fill" data-width="85"></div></div>
+            </div>
+
+            <div class="skill-bar-box">
+                <p>भाषिक कौशल्य विकास <span>75%</span></p>
+                <div class="bar"><div class="fill" data-width="75"></div></div>
+            </div>
+
+            <!-- Circle Skills -->
+            <div class="skills-circle-container">
+
+    <div class="circle-box">
+        <div class="circle" data-percent="80">
+            <span>80</span>
+        </div>
+        <p>संगणक वापर</p>
+    </div>
+
+    <div class="circle-box">
+        <div class="circle" data-percent="56">
+            <span>56</span>
+        </div>
+        <p>अध्यापन साधने</p>
+    </div>
+
+    <div class="circle-box">
+        <div class="circle" data-percent="60">
+            <span>60</span>
+        </div>
+        <p>लेखन कौशल्य</p>
+    </div>
+
+    <div class="circle-box">
+        <div class="circle" data-percent="70">
+            <span>70</span>
+        </div>
+        <p>साहित्य निर्मिती</p>
+    </div>
+
+</div>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="upakram" class="upakram-section">
+
+    <!-- Title -->
+    <h2 class="section-title">उपक्रम</h2>
+
+    <!-- Subtitle -->
+    <h3 class="section-subtitle">कार्यक्रम विशेष व कार्यशाळा सहभाग</h3>
+
+    <!-- Images Grid -->
+    <div class="upakram-container">
+
+        <!-- Left Big Image -->
+        <div class="upakram-item large">
+            <img src="img1.jpg" alt="">
+            <div class="overlay">
+                <h4>योग साधना</h4>
+                <p>शारीरिक व मानसिक आरोग्यासाठी योगाभ्यास</p>
+            </div>
+        </div>
+
+        <!-- Middle Top -->
+        <div class="upakram-item">
+            <img src="img2.jpg" alt="">
+            <div class="overlay">
+                <h4>आत्मसन्मान उपक्रम</h4>
+                <p>स्वतःची ओळख व व्यक्तिमत्त्व विकास सत्र</p>
+            </div>
+        </div>
+
+        <!-- Middle Bottom -->
+        <div class="upakram-item">
+            <img src="img3.jpg" alt="">
+            <div class="overlay">
+                <h4>समूह अध्यापन</h4>
+                <p>सहकार्य व शिकण्यास प्रोत्साहन देणारा उपक्रम</p>
+            </div>
+        </div>
+
+        <!-- Right Big Image -->
+        <div class="upakram-item large">
+            <img src="img4.jpg" alt="">
+            <div class="overlay">
+                <h4>योग प्रात्यक्षिक</h4>
+                <p>विद्यार्थ्यांसमोर सादर केलेला योग सत्र</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" class="contact-section">
+
+    <div class="contact-container">
+
+        <!-- LEFT -->
+        <div class="contact-left">
+            <img src="logo.png" alt="logo" class="contact-logo">
+
+            <h4>कांतीलाल खिंवसरा बी.एड. कॉलेज, पुणे.</h4>
+
+            <ul class="footer-links">
+                <li><a href="#home">मुख्यपृष्ठ</a></li>
+                <li><a href="#about">माझ्याबद्दल</a></li>
+                <li><a href="#education">शैक्षणिक नोंदणी</a></li>
+                <li><a href="#chintan">चिंतन लेखन</a></li>
+                <li><a href="#skills">कौशल्ये</a></li>
+                <li><a href="#upakram">उपक्रम</a></li>
+                <li><a href="#contact">संपर्क</a></li>
+            </ul>
+        </div>
+
+        <!-- CENTER (MAP) -->
+        <div class="contact-center">
+            <iframe 
+                src="https://www.google.com/maps?q=Pune&output=embed"
+                width="100%" height="250" style="border:0;">
+            </iframe>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="contact-right">
+            <p><strong>📞 8482944975</strong></p>
+            <p><strong>✉️ kkbedashwinipawar@gmail.com</strong></p>
+            <p><strong>📍 Pune, Maharashtra</strong></p>
+        </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="copyright">
+        Copyright (c) 2025 Copyright Vaishali Patil All Rights Reserved.
+    </div>
+
+</section>
+<script>
+const elements = document.querySelectorAll('.animate');
+
+function checkScroll() {
+    const triggerBottom = window.innerHeight * 0.85;
+
+    elements.forEach(el => {
+        const boxTop = el.getBoundingClientRect().top;
+
+        if (boxTop < triggerBottom) {
+            el.classList.add('show');
+        }
+    });
+}
+
+window.addEventListener('scroll', checkScroll);
+window.addEventListener('load', checkScroll);
+</script>
+<script>
+/* BARS */
+document.querySelectorAll('.fill').forEach(el => {
+    let width = el.getAttribute('data-width');
+    el.style.width = width + '%';
+});
+
+/* CIRCLES */
+document.querySelectorAll('.skills-section .circle').forEach(circle => {
+    let percent = circle.getAttribute('data-percent');
+    let degree = percent * 3.6;
+
+    circle.style.background = `conic-gradient(#38bdf8 ${degree}deg, #1e293b ${degree}deg)`;
+});
+</script>
+</body>
+</html>
