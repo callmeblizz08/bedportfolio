@@ -807,6 +807,77 @@ header h1, header p {
     transform: translateY(-3px);
     box-shadow: 0 0 15px rgba(0, 191, 255, 0.6);
 }
+/* ==========================
+   SEMESTER 2 UPAKRAM
+========================== */
+
+#upakram-sem2{
+    padding: 80px 0;
+}
+
+#upakram-sem2 .section-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#upakram-sem2 .section-title h5{
+    color: #00bfff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#upakram-sem2 .section-title h2{
+    color: #00bfff;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.upakram-grid{
+    width: 90%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 35px;
+}
+
+.upakram-card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.upakram-card img{
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    display: block;
+}
+
+.upakram-text{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+
+    color: #00ff88;
+    font-size: 28px;
+    font-weight: 700;
+
+    z-index: 2;
+}
+
+.upakram-card::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,0.25);
+}
+
+.upakram-card:hover img{
+    transform: scale(1.05);
+    transition: 0.4s;
+}
     </style>
 </head>
 
@@ -1402,6 +1473,66 @@ header h1, header p {
                 <h4>योग प्रात्यक्षिक</h4>
                 <p>विद्यार्थ्यांसमोर सादर केलेला योग सत्र</p>
             </div>
+        </div>
+
+    </div>
+
+</section>
+<section id="upakram-sem2" class="upakram-section">
+
+    <div class="section-title">
+        <h5>उपक्रम</h5>
+        <h2>कार्यक्रम विशेष व कार्यशाळा सहभाग - सत्र २</h2>
+    </div>
+
+    <div class="upakram-grid">
+
+        <!-- 1 -->
+        <div class="upakram-card">
+            <img src="images/sem2-1.jpg" alt="">
+            <div class="upakram-text">अध्यापन</div>
+        </div>
+
+        <!-- 2 -->
+        <div class="upakram-card">
+            <img src="images/sem2-2.jpg" alt="">
+            <div class="upakram-text">चित्रकला स्पर्धा</div>
+        </div>
+
+        <!-- 3 -->
+        <div class="upakram-card">
+            <img src="images/sem2-3.jpg" alt="">
+            <div class="upakram-text">छात्रसेवा काल</div>
+        </div>
+
+        <!-- 4 -->
+        <div class="upakram-card">
+            <img src="images/sem2-4.jpg" alt="">
+            <div class="upakram-text">शिवजन्मोत्सव सोहळा</div>
+        </div>
+
+        <!-- 5 -->
+        <div class="upakram-card">
+            <img src="images/sem2-5.jpg" alt="">
+            <div class="upakram-text">पोस्टर सादरीकरण</div>
+        </div>
+
+        <!-- 6 -->
+        <div class="upakram-card">
+            <img src="images/sem2-6.jpg" alt="">
+            <div class="upakram-text">PPT सादरीकरण</div>
+        </div>
+
+        <!-- 7 -->
+        <div class="upakram-card">
+            <img src="images/sem2-7.jpg" alt="">
+            <div class="upakram-text">समूह छायाचित्र</div>
+        </div>
+
+        <!-- 8 -->
+        <div class="upakram-card">
+            <img src="images/sem2-8.jpg" alt="">
+            <div class="upakram-text">अध्यापन</div>
         </div>
 
     </div>
